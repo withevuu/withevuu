@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Withevuu</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+/* HEADER */
+
+.header{
+padding:30px;
+}
+
+/* LOGO */
+
+.logo{
+width:110px;
+height:110px;
+margin:auto;
+border-radius:50%;
+background-image:url("https://strategic-gold-odmoysb79j.edgeone.app/WhatsApp%20Image%202026-03-13%20at%201.01.38%20AM.jpeg");
+background-size:cover;
+background-position:center;
+
+box-shadow:0 0 20px #00eaff,0 0 70px #00eaff;
+
+animation:float 4s ease-in-out infinite, glow 2s infinite alternate;
+}
+
+/* LOGO ANIMATION */
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}
+
+@keyframes glow{
+from{box-shadow:0 0 10px #00eaff;}
+to{box-shadow:0 0 40px #00eaff,0 0 90px #00eaff;}
+}
+
+h1{
+margin-top:12px;
+font-size:34px;
+letter-spacing:2px;
+}
+
+/* VIDEO PLAYER */
+
+.video-box{
+display:none;
+width:95%;
+max-width:950px;
+margin:25px auto;
+border-radius:12px;
+overflow:hidden;
+}
+
+.video-box iframe{
+width:100%;
+height:520px;
+border:none;
+}
+
+/* MODULES */
+
+.container{
+width:95%;
+max-width:950px;
+margin:auto;
+padding-bottom:40px;
+}
+
+.module{
+background:#181818;
+padding:18px;
+border-radius:10px;
+margin-top:10px;
+cursor:pointer;
+transition:0.3s;
+font-size:16px;
+}
+
+.module:hover{
+background:#242424;
+transform:scale(1.02);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="logo"></div>
+
+<h1>Withevuu</h1>
+
+</div>
+
+<div class="video-box" id="videoBox">
+
+<iframe id="player"
+allow="autoplay; fullscreen"
+allowfullscreen>
+</iframe>
+
+</div>
+
+<div class="container">
+
+<div class="module" onclick="playVideo('16kRIzxTaof3c0mIadQiCi7PEYXq2ARek')">
+Introduction To MB Community
+</div>
+
+<div class="module" onclick="playVideo('18zKXWQ-w75WAH49nKokNOqCgHSJJoKVl')">
+Quotex Binary (Secret Affiliate Business)
+</div>
+
+<div class="module" onclick="playVideo('1WAO5Ak5x-FQrzK0yUOy5wVSXXrItfbcq')">
+YouTube Refer And Earn Hacks
+</div>
+
+<div class="module" onclick="playVideo('1DxmdJRNKJzP73u3rPC-4lvIx3wQLIahv')">
+Campaign Loot Creation
+</div>
+
+<div class="module" onclick="playVideo('1iZm-Ue6cP3VkL6cnAE8r2kBn7KxViimK')">
+Module 5: Url shortner part 1 intro
+</div>
+
+<div class="module" onclick="playVideo('1Fn6YVycF4b1Z--C_hRPmMcGvUY-eOzB1')">
+Module 6: Url shortner part 2 full trick
+</div>
+
+</div>
+
+<script>
+
+function playVideo(id){
+
+document.getElementById("videoBox").style.display="block";
+
+document.getElementById("player").src =
+"https://drive.google.com/file/d/"+id+"/preview";
+
+window.scrollTo({
+top:150,
+behavior:"smooth"
+});
+
+}
+
+</script>
+
+</body>
+</html>
